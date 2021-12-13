@@ -18,7 +18,7 @@ public class Libreria {
         carrito.add(historieta);
         carrito.add(elibro);
 
-        ventas.venta(cliente,carrito);
+        ventas.ventas(cliente,carrito);
 
     }
 
