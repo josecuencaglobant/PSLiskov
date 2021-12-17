@@ -9,7 +9,8 @@ public class Ventas {
         for(Object producto: carrito){
 
                 if(producto instanceof Producto){
-                    String estadoVenta = ( (Producto) producto ).entregaADomicilio(cliente.getDireccion());
+                    String estadoVenta = ( (Producto) producto )
+                            .entregaADomicilio(cliente.getDireccion());
                     System.out.println(estadoVenta);
                 }
 
