@@ -56,5 +56,12 @@ public class Sales {
         }
     }
 
+    void saleProduct(Client client, ArrayList<ProductSale> shoppingCart ){
+        for(ProductSale product: shoppingCart){
+            String response =
+                    product.deliverToUser(client);
+            System.out.println(response);
+        }
+    }
 
 }

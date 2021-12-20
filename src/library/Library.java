@@ -16,12 +16,14 @@ public class Library {
         var comic = new Comic();
         var ebook =new EBook();
 
-        var shoppingCar = new ArrayList<>();
+        var shoppingCar = new ArrayList<ProductSale>();
         shoppingCar.add(book);
         shoppingCar.add(comic);
         shoppingCar.add(ebook);
 
-        sales.sales(client,shoppingCar);
+        sales.saleProduct(client,shoppingCar);
+
+        //sales.sales(client,shoppingCar);
 
         //sales.physicalAndDigitalSales(client,shoppingCar);
 
